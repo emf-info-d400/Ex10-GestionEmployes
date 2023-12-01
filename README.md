@@ -277,7 +277,6 @@ class PeriodeDeTravail {
     +toString() String
 }
 
-
 Controller o--> "1" ServiceEmploye : -refController
 ServiceEmploye o--> "1" Controller : -refService
 ServiceEmploye o--> "1" Entreprise : -entreprise
