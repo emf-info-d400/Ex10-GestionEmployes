@@ -8,6 +8,7 @@ Lisez avec attention les informations fournies ci-après sous diverses formes (d
 
 ## Résultat à obtenir
 Si votre code est correctement implémenté selon les directives reçues, vous devriez obtenir une application fonctionnelle ressemblant à cela :
+
 ![interface](images/interface_final.png)
 
 ## Description des fonctionnalités de l'application
