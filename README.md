@@ -1,4 +1,4 @@
-# Exercice 11 : Gestion des employés
+# Exercice 10 : Gestion des employés
 ## durée : 240'
 ## Objectifs visés :
 Maîtrise de MVC ; Maitriser les diagrammes de séquence ; Maitriser les diagrammes de classes ; Savoir se référer à la Javadoc.
