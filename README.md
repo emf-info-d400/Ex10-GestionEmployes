@@ -314,18 +314,18 @@ namespace view {
 Voici le diagramme de séquence de la méthode de la méthode `main()` de la classe `Application` du package `app` :
 ```mermaid
 sequenceDiagram
-    participant main
-    main->>Controller: new Controller()
-    Controller-->>main: refController=
-    main->>ServiceEmploye: new ServiceEmploye()
-    ServiceEmploye-->>main: refService=
-    main->>Controller: setRefServiceEmploye(refService)
-    main->>View: new View()
-    View-->>main: refView=
-    main->>Controller: setRefView(refView)
-    main->>View: setRefCtrl(refController)
-    main->>ServiceEmploye: setRefCtrl(refController)
-    main->>Controller: start()
+    participant app.Application.main()
+    create participant refCtrl
+    app.Application.main()->>refCtrl: new Controller()
+    create participant refServiceEmploye
+    app.Application.main()->>refServiceEmploye: new ServiceEmploye()
+    app.Application.main()->>refCtrl: setRefServiceEmploye(refServiceEmploye)
+    create participant refView
+    app.Application.main()->>refView: new View()
+    app.Application.main()->>refCtrl: setRefView(refView)
+    app.Application.main()->>refView: setRefCtrl(refCtrl)
+    app.Application.main()->>refServiceEmploye: setRefCtrl(refctrl)
+    app.Application.main()->>refCtrl: start()
 ```
 ### Javadoc
 Vous pouvez cliquer sur [ce lien pour obtenir la JavaDoc en HTML](javadoc/index.html) de l'application **GestionEmployes**.
